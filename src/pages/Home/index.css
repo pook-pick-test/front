@@ -1,0 +1,55 @@
+p {
+  margin: 0;
+}
+
+.logo-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin:  0;
+}
+
+.logo {
+  margin-top: 5%;
+  margin-left: 15%; 
+  width: 70%;
+  height: auto;
+  align-items: center;
+}
+.about-us {
+  padding: 0 5%;
+}
+.read-more-button {
+  display: flex;
+  margin: 3% auto;
+  background-color: #ffffff;
+  color: black;
+  align-items: center;
+  border: 1px solid #000;
+  padding: 10px 20px;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  height: 34px;
+  weight: 103px;
+  justify-content: center;
+}
+.category-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.view-all {
+  background-color: transparent;
+  color: #000;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: light;
+}
+.categories {
+  padding: 0 5%;
+}
+.recommended {
+  padding: 0 5%;
+}
