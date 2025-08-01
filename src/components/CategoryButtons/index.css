@@ -1,6 +1,6 @@
 .category-buttons{
     display: flex;
-    gap: 3%;
+    justify-content: space-between;
 }
 .category-btn {
     display: flex;
