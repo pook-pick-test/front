@@ -1,0 +1,20 @@
+.category-buttons{
+    display: flex;
+    gap: 3%;
+}
+.category-btn {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 100px;
+    background: linear-gradient(to bottom, #FFFFFF, #FFFFE4);
+    color: #000;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+    margin-right: 10px;
+    width: 96px;
+    height: 96px;
+    border: 1px solid #000;
+    flex-direction: row;
+}
