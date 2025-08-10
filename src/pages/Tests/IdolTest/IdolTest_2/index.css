@@ -1,0 +1,26 @@
+.idol-test-2 {
+    background: linear-gradient(180deg, #FFEEE7 1.92%, #FFF 76.92%);
+    display: flex;
+    flex-direction: column; 
+    text-align: center;
+    align-items: center;
+}
+.question1{
+    padding-top: 240px;
+    font-weight: 800;
+    font-style: normal;
+}
+.question1-description{
+    padding: 10px 10px 20px 0px;
+}
+.name-input-field{
+    width: 320px;
+    height: 40px;
+    padding-top: 10px;
+    font-size: 24px;
+    text-align: center;
+    border-radius: 20px;
+    border: 1px solid #000;
+    background: #FFF;
+    margin-bottom: 200px;
+}

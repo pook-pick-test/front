@@ -1,0 +1,19 @@
+.idol-test-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.test-name{
+    margin-top: 35px;
+}
+
+.microphone-img{
+    width: 110px;
+    height: 110px;
+    margin: 60px;
+}
+
+.test-description{
+    padding: 0px 70px 60px 70px;
+    text-align: center;
+}
