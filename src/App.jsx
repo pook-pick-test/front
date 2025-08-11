@@ -5,6 +5,8 @@ import ReadMore from './pages/ReadMore';
 import IdolTest_Start from './pages/Tests/IdolTest/IdolTest_1';
 import IdolTestLayout from './pages/Tests/IdolTest/IdolTestLayout';
 import IdolTest_2 from './pages/Tests/IdolTest/IdolTest_2';
+import IdolTest_3 from './pages/Tests/IdolTest/IdolTest_3';
+
 function App() {
   return (
       <Router>
@@ -16,6 +18,7 @@ function App() {
           <Route path="/music/idol-test" element={<IdolTestLayout />}>
             <Route index element={<IdolTest_Start />} />
             <Route path="2" element={<IdolTest_2/>} />
+            <Route path="3" element={<IdolTest_3/>} />
           </Route>
         </Routes>
       </Router>

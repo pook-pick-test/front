@@ -1,26 +1,40 @@
 .idol-test-2 {
     background: linear-gradient(180deg, #FFEEE7 1.92%, #FFF 76.92%);
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     text-align: center;
     align-items: center;
+    height: 100vh; /* 화면 전체 높이 */
 }
-.question1{
-    padding-top: 240px;
+
+.question1 {
+    padding-top: 20vh; /* 화면 높이의 20% */
     font-weight: 800;
     font-style: normal;
+    font-size: 2rem; /* 글자 크기도 상대 단위 */
 }
-.question1-description{
-    padding: 10px 10px 20px 0px;
+
+.question1-description {
+    padding: 2vh 5% 3vh 0; /* 위/양옆/아래를 퍼센트와 vh로 */
+    font-size: 1rem;
 }
-.name-input-field{
-    width: 320px;
-    height: 40px;
-    padding-top: 10px;
-    font-size: 24px;
+
+.name-input-field {
+    width: 80%;          /* 부모의 80% */
+    max-width: 320px;    /* 너무 커지지 않게 제한 */
+    height: 6vh;         /* 화면 높이 비율 */
+    padding-top: 0.5vh;
+    font-size: 1.5rem;
     text-align: center;
     border-radius: 20px;
     border: 1px solid #000;
     background: #FFF;
-    margin-bottom: 200px;
+    margin-bottom: 15vh; /* 버튼과 거리 */
+}
+
+.test-start-button {
+    width: 50%;         /* 부모의 50% */
+    max-width: 170px;   /* 최대 크기 제한 */
+    height: 10vh;       /* 화면 높이 비율 */
+    max-height: 76px;   /* 최대 높이 제한 */
 }

@@ -1,0 +1,41 @@
+.idol-test-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 85vh; /* 화면 높이 딱 맞춤 */
+    background: linear-gradient(180deg, #FFEEE7 1.92%, #FFF 76.92%);
+}
+
+.progress-bar-container {
+    flex-shrink: 0; /* 높이 줄어들지 않게 */
+    padding: 2vh 0;
+}
+
+.question-1-wrapper {
+    flex: 1; /* 남은 공간 전부 차지 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* 세로 중앙 */
+    align-items: center;
+    border: 1px solid #000;
+    border-radius: 20px;
+    margin: 0 5%;
+    background-color: #fff;
+}
+.question-1{
+    padding: 2vh 3vh;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.switch-page-button-wrapper {
+    flex-shrink: 0; /* 줄어들지 않게 */
+    padding: 15vh 0 5vh 0;
+    display: flex;
+    gap: 20vw;
+    justify-content: center;
+}
+.switch-page-button{
+    padding: 0 2vh;
+}

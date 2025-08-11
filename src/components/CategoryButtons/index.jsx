@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import './index.css';
 
-const categories = [ 'music', 'movie', 'game' ];
+const categories = [ 'music', 'drama', 'horo' ];
 
 const CategoryButtons = () => {
     const navigate = useNavigate();
