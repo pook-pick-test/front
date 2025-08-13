@@ -4,7 +4,7 @@
     align-items: center;
 }
 .test-name{
-    margin-top: 35px;
+    margin-top: 30px;
 }
 
 .microphone-img{
@@ -14,6 +14,6 @@
 }
 
 .test-description{
-    padding: 0px 70px 60px 70px;
+    padding: 0px 40px 60px 40px;
     text-align: center;
 }

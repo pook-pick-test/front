@@ -14,5 +14,5 @@
 }
 
 .option-button:hover {
-    background-color: #ffcab7;
+    background: linear-gradient(0deg, #FEFDF2 0%, #FFF0E8 100%);
 }

@@ -1,9 +1,9 @@
 .switch-page-button {
     border-radius: 20px;
-    border: 1px solid #000;
-    background: #1A1A1A;
+    border: 1px solid #1A1A1A;
+    background: #FFF;
     flex-shrink: 0;
-    color: white;
+    color: #1A1A1A;
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
@@ -12,4 +12,8 @@
     display: flex;             /* 추가 */
     justify-content: center;   /* 가로 중앙 정렬 */
     align-items: center;       /* 세로 중앙 정렬 */
+}
+.switch-page-button:hover {
+    background: #1A1A1A;
+    color: #FFF;
 }
