@@ -6,11 +6,6 @@
     background: linear-gradient(180deg, #FFEEE7 1.92%, #FFF 76.92%);
 }
 
-.progress-bar-container {
-    flex-shrink: 0; /* 높이 줄어들지 않게 */
-    padding: 2vh 0;
-}
-
 .question-1-wrapper {
     flex: 1; /* 남은 공간 전부 차지 */
     display: flex;

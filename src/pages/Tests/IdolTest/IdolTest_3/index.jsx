@@ -28,7 +28,7 @@ const IdolTest_3 = () => {
 
     return (
         <div className="idol-test-3">
-            <ProgressBar currentStep={1} totalSteps={3} />
+            <ProgressBar className="progressBar-1" currentStep={1} totalSteps={3} />
             <div className="question-1-wrapper">
                 <h3 className="question-1">Q1. 오늘은 스케줄이 있는 날! 아침에 준비하는 나의 모습은?</h3>
                 <div className="option">
