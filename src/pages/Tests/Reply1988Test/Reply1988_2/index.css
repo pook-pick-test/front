@@ -10,7 +10,7 @@
 .microphone-img{
     width: 110px;
     height: 110px;
-    margin: 60px;
+    margin: 40px;
 }
 
 .test-description{
@@ -21,6 +21,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
-    padding: 0 20px;
+    width: 90%;
+    padding: 0 30px 30px 30px;
 }

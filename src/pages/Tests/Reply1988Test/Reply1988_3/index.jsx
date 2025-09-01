@@ -18,13 +18,13 @@ const Reply1988_3 = () => {
             <img src={microphoneImg} alt="microphone-image" className="microphone-img"/>
             <p className="test-description">Where to watch?</p>
             <p className="test-description">
-                <a href="https://www.disneyplus.com/en-jp/browse/entity-5c54defb-1c41-48a9-b3c0-825c5ae9046f?distributionPartner=google" target="_blank" rel="noopener noreferrer">
-                    "Disney plus"
+                <a href="https://www.tving.com/contents/P000205285" target="_blank" rel="noopener noreferrer">
+                    "TVing"
                 </a>
             </p>
             <div className="switch-page-button-container">
-                <SwitchPageButton onClick={() => navigate('/drama/reply1988-test')} disabled={false} className="previous-button">previous</SwitchPageButton>
-                <SwitchPageButton onClick={handleNext} disabled={false}>next</SwitchPageButton>
+                <SwitchPageButton onClick={() => navigate('/category/drama/reply1988-test/2')} disabled={false} className="previous-button">previous</SwitchPageButton>
+                <SwitchPageButton onClick={handleNext} disabled={false}>Test Start</SwitchPageButton>
             </div>
         </div>
     );
