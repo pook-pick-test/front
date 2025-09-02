@@ -3,6 +3,16 @@ import html2canvas from 'html2canvas';
 import downloadImage from '../../../../assets/downloadButton.png'
 import musicPlayer from '../../../../assets/music-player.png'
 const Reply1988_Result = () => {
+    {/* 라인 공유하기 */}
+    const shareWithLine = async() => {
+        let shareData = {
+            title: 'TEST:D',
+            text: 'Share my result with friends!',
+            url: 'test:D-url 입니당',
+    };
+    const resultPara = document.querySelector();
+    
+    {/* 이미지 저장하기 */}
     const handleDownloadImage = async() => {
         const element = document.querySelector('.result-wrapper');     // 캡쳐하고 싶은 영역 선택
         if (!element) return;
@@ -30,9 +40,13 @@ const Reply1988_Result = () => {
                 <h3 className="result-desc">Your Reply 1988<br/>Character is</h3>
                 {/* api로 부터 결과를 받아와야함 */}
                 {/* //순서대로 이름, 사진, 설명 - API응답 결과로 변환 필요 */}
-                <h1 className='result-name'>Deok-sun</h1>
+                {/* 결과 캐릭터 이름 */}
+                <h1 className='result-name'>Deok-sun</h1>        
+                {/* 결과 캐릭터의 사진 */}
                 <img className='result-img' alt='result-img'></img>
+                {/* 결과 캐릭터의 설명 */}
                 <p className='result-explain'>Deok-sun is a cheerful, kind-hearted, and sometimes clumsy high school girl. She's the middle child in her family and often feels overlooked, but she remains optimistic and loyal to her friends. Deok-sun is relatable and down-to-earth, navigating teenage life, love, and friendship with warmth and sincerity.</p>
+                
                 <p className='music-desc'>An OST song that suits you --&gt;</p>
                 <div className='result-music'>
                     <div className='music-item'>
@@ -44,8 +58,8 @@ const Reply1988_Result = () => {
             </div>
             <p className='share-desc'>share with your friends</p>
             <div className="sharing-methods">
-                <button></button>
-                <button></button>
+                <button></button> {/*트위터(x)공유하기*/}
+                <button></button> {/*라인 공유하기*/}
                 <img src= {downloadImage} alt='이미지로 저장' onClick={handleDownloadImage} className='download-btn' />
             </div>
         </div>
