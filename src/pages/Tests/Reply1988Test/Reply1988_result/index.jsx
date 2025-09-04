@@ -4,13 +4,25 @@ import downloadImage from '../../../../assets/downloadButton.png'
 import musicPlayer from '../../../../assets/music-player.png'
 const Reply1988_Result = () => {
     {/* 라인 공유하기 */}
-    const shareWithLine = async() => {
-        let shareData = {
-            title: 'TEST:D',
-            text: 'Share my result with friends!',
-            url: 'test:D-url 입니당',
-    };
-    const resultPara = document.querySelector();
+    // 이 방식은 webShareAPI 사용하려고 했던 방식
+    // const shareWithLine = async() => {
+    //     let shareData = {
+    //         title: 'TEST:D',
+    //         text: 'Share my result with friends!',
+    //         url: 'test:D-url 입니당',
+    // };
+    // const resultPara = document.querySelector();
+
+    {/* X 공유하기 */}
+    const shareWithX() {
+        var sendText = "내 결과도 알아보기"; //전달할 텍스트
+        var sendUrl = "https://example.com" //전달할 URL                        //공유 URL 나중에 수정해야함
+        var xURL = "https://twitter.com/intent/tweet?text="
+            + encodeURIComponent(sendText)
+            + "&url=" + encodeURIComponent(sendUrl);
+        window.open(xURL, "_blank");
+    }
+
     
     {/* 이미지 저장하기 */}
     const handleDownloadImage = async() => {
@@ -58,8 +70,12 @@ const Reply1988_Result = () => {
             </div>
             <p className='share-desc'>share with your friends</p>
             <div className="sharing-methods">
-                <button></button> {/*트위터(x)공유하기*/}
-                <button></button> {/*라인 공유하기*/}
+                <img src={X-공유이미지추가하기} alt="shareWith-X" onClick={shareWithX}/>
+
+                <a href="https://line.me/R/msg/text/?내%20결과도%20알아보기%20👉%20https://example.com" target="_blank">                    //공유 URL 나중에 수정해야함
+                    <img src="line-button.png" alt="LINE으로 공유하기" />                                                                   //라인 공유 이미지 실제 이미지로 교체하기
+                </a>
+
                 <img src= {downloadImage} alt='이미지로 저장' onClick={handleDownloadImage} className='download-btn' />
             </div>
         </div>
