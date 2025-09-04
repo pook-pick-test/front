@@ -22,7 +22,7 @@ function App() {
           <Route path="/readmore" element={<ReadMore />} />
           
           {/* Idol Test 중첩 라우트 */}
-          <Route path="category/music/idol-test" element={<IdolTestLayout />}>
+          <Route path="category/music" element={<IdolTestLayout />}>      {/*url 나중에 /idol-test 추가하기*/}
             <Route index element={<IdolTest_Start />} />
             <Route path="2" element={<IdolTest_2/>} />
             <Route path="3" element={<IdolTest_3/>} />
@@ -30,7 +30,7 @@ function App() {
           </Route>
 
           {/* Reply 1988 Test 중첩 라우트 */}
-          <Route path="category/drama/reply1988-test" element={<Reply1988TestLayout />}>
+          <Route path="category/drama" element={<Reply1988TestLayout />}>    {/*url 나중에 /reply1988-test 추가하기*/}
             <Route index element={<Reply1988_Start />} />
             <Route path="2" element={<Reply1988_2 />} />
             <Route path="3" element={<Reply1988_3 />} />

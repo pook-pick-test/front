@@ -1,11 +1,12 @@
 import './index.css';
-import { useNavigate } from "react-router-dom";
+import { useOutletContext, useNavigate } from "react-router-dom";
 import SelectButton from "../../../../components/SelectButton";
 import SwitchPageButton from '../../../../components/SwitchPageButton';
 import ProgressBar from "../../../../components/ProgressBar";
 
 const Reply1988_4 = () => {
     const navigate = useNavigate();
+    const { saveAnswer, answers } = useOutletContext();
 
     const handleNext = () => {
         navigate('../result');

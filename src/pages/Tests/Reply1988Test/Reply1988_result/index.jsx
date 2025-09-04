@@ -1,7 +1,9 @@
 import './index.css';
 import html2canvas from 'html2canvas';
-import downloadImage from '../../../../assets/downloadButton.png'
-import musicPlayer from '../../../../assets/music-player.png'
+import shareXimage from '../../../../assets/xshare.png';
+import downloadImage from '../../../../assets/downloadButton.png';
+import musicPlayer from '../../../../assets/music-player.png';
+import lineImage from '../../../../assets/lineshare.png';
 const Reply1988_Result = () => {
     {/* 라인 공유하기 */}
     // 이 방식은 webShareAPI 사용하려고 했던 방식
@@ -14,7 +16,7 @@ const Reply1988_Result = () => {
     // const resultPara = document.querySelector();
 
     {/* X 공유하기 */}
-    const shareWithX() {
+    const shareWithX = () => {
         var sendText = "내 결과도 알아보기"; //전달할 텍스트
         var sendUrl = "https://example.com" //전달할 URL                        //공유 URL 나중에 수정해야함
         var xURL = "https://twitter.com/intent/tweet?text="
@@ -70,10 +72,10 @@ const Reply1988_Result = () => {
             </div>
             <p className='share-desc'>share with your friends</p>
             <div className="sharing-methods">
-                <img src={X-공유이미지추가하기} alt="shareWith-X" onClick={shareWithX}/>
+                <img src={shareXimage} alt="shareWith-X" onClick={shareWithX}/>
 
-                <a href="https://line.me/R/msg/text/?내%20결과도%20알아보기%20👉%20https://example.com" target="_blank">                    //공유 URL 나중에 수정해야함
-                    <img src="line-button.png" alt="LINE으로 공유하기" />                                                                   //라인 공유 이미지 실제 이미지로 교체하기
+                <a href="https://line.me/R/msg/text/?내%20결과도%20알아보기%20👉%20https://example.com" target="_blank">
+                    <img src={lineImage} alt="LINE으로 공유하기" />
                 </a>
 
                 <img src= {downloadImage} alt='이미지로 저장' onClick={handleDownloadImage} className='download-btn' />
