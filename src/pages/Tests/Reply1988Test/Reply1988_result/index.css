@@ -58,15 +58,3 @@
     /* width: 127px; */
     height: 115px;
 }
-.share-desc{
-    font-size: 13px;
-    font-weight: 400;
-}
-.sharing-methods{
-    display: flex;
-    gap: 10vw;
-    margin-top: 1vh;
-}
-.download-btn {
-    cursor: pointer;
-}

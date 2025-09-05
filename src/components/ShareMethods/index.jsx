@@ -1,8 +1,8 @@
 import './index.css';
 import html2canvas from 'html2canvas';
-import shareXimage from '../../../../assets/xshare.png';
-import lineImage from '../../../../assets/lineshare.png';
-import downloadImage from '../../../../assets/downloadButton.png';
+import shareXimage from '../../assets/xshare.png';
+import lineImage from '../../assets/lineshare.png';
+import downloadImage from '../../assets/downloadButton.png';
 
 const ShareMethods = () => {
   //x 공유
@@ -41,10 +41,13 @@ const ShareMethods = () => {
       <p className="share-desc">share with your friends</p>
       <div className="sharing-buttons">
         <img src={shareXimage} alt="shareWith-X" onClick={shareWithX} />
-        <a href="https://line.me/R/msg/text/?내%20결과도%20알아보기%20
-          <img src={lineImage} alt="shareWith-Line" onClick={} />
+        <a href="https://line.me/R/msg/text/?내%20결과도%20알아보기%20👉%20https://example.com" target="_blank">
+                    <img src={lineImage} alt="LINE으로 공유하기" />
         </a>
+        <img src={downloadImage} alt='이미지로 저장' onClick={handleDownloadImage} className='download-btn' />
       </div>
     </div>
   );
 };
+
+export default ShareMethods;

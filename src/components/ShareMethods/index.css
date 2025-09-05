@@ -1,0 +1,13 @@
+.share-desc{
+    font-size: 13px;
+    font-weight: 400;
+}
+.sharing-buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 8vw;
+    margin-top: 1vh;
+}
+.download-btn {
+    cursor: pointer;
+}
