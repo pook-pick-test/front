@@ -10,7 +10,7 @@ const Header = () => {
         <option>ภาษาไทย</option>
       </select>
 
-      <h1 className="site-title">pook-pick-test</h1>
+      <h1 className="site-title">test:D</h1>
 
       <a href="/" className="home-icon">
         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">

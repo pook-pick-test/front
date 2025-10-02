@@ -13,7 +13,8 @@
   height: 15px;
   background-color: #ffd9d1;
   border-radius: 15px;
-  border: 1.5px solid #333;
+  border: 1.5px solid #1a1a1a;
+  margin-top: 2vh;
 }
 
 .progress-bar-fill {

@@ -5,7 +5,8 @@ body {
 }
 
 h2 {
-  font-size: 30px;
+  /* font-size: 30px; */
+  font-size: clamp(30px, 2vw, 40px);
   font-weight: 600;
   margin-bottom: 3%;
 }
