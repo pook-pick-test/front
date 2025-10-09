@@ -13,6 +13,13 @@ import Reply1988_2 from './pages/Tests/Reply1988Test/Reply1988_2';
 import Reply1988_3 from './pages/Tests/Reply1988Test/Reply1988_3';
 import Reply1988_4 from './pages/Tests/Reply1988Test/Reply1988_4';
 import Reply1988_Result from './pages/Tests/Reply1988Test/Reply1988_result';
+import SajuTestLayout from './pages/Tests/SajuTest/SajuTestLayout';
+import SajuTest_Start from './pages/Tests/SajuTest/SajuTest_1';
+import SajuTest_2 from './pages/Tests/SajuTest/SajuTest_2';
+import SajuTest_3 from './pages/Tests/SajuTest/SajuTest_3';
+import SajuTest_4 from './pages/Tests/SajuTest/SajuTest_4';
+import SajuTest_TestStart from './pages/Tests/SajuTest/SajuTest_5';
+import SajuProfile_Input from './pages/Tests/SajuTest/SajuTest_6';
 
 function App() {
   return (
@@ -36,6 +43,16 @@ function App() {
             <Route path="3" element={<Reply1988_3 />} />
             <Route path="4" element={<Reply1988_4 />} />
             <Route path="result" element={<Reply1988_Result />} />
+          </Route>
+
+          {/* Saju Test 중첩 라우트 */}
+          <Route path="category/horo" element={<SajuTestLayout />}>
+            <Route index element={<SajuTest_Start />} />
+            <Route path='2' element={<SajuTest_2 />} />
+            <Route path='3' element={<SajuTest_3/>} />
+            <Route path='4' element={<SajuTest_4/>} />
+            <Route path='5' element={<SajuTest_TestStart/>} />
+            <Route path='6' element={<SajuProfile_Input />} />
           </Route>
         </Routes>
       </Router>

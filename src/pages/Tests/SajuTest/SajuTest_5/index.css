@@ -1,0 +1,19 @@
+.saju-test-startnow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 40px 0 40px;
+    background: linear-gradient(180deg, #FFEFDF 0%, #FFFFF6 43.27%, #FFF 99.04%);
+}
+.crystalball-img{
+    width: 110px;
+    height: 110px;
+    margin: 60px;
+}
+.start-button {
+    background-color: #1A1A1A;
+    color: white;
+    margin: 100px 0px 20px 0px;
+    width: 140px;
+}

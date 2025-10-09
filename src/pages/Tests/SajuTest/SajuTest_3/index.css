@@ -1,0 +1,23 @@
+.saju-test-3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.desc-2-wrapper {
+    text-align: center;
+}
+.desc-2 {
+    font-size: 24px;
+    margin-bottom: 54px;
+}
+.desc-content-2{
+    padding: 60px 40px 60px 40px;
+}
+
+.switch-page-button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    padding: 0 30px 30px 30px;
+}
