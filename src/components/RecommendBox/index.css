@@ -1,0 +1,92 @@
+.recommend-box {
+    position: relative;
+    width: 500px;
+    height: 375px;
+    margin: 20px auto;
+    background: #fff;
+    border: 1.5px solid #CECECE;
+    border-radius: 40px;
+  
+    display: block;
+    padding: 0;
+    max-width: none;
+    max-height: none;
+    flex-direction: column;
+  }
+
+  .recommend-image {
+    position: absolute;
+    left: 25px;
+    top: 40px;
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.25);
+    margin: 0; /* override previous margin-bottom */
+  }
+  
+  /* CONTENT AREA ON THE RIGHT */
+  .recommend-content {
+    position: absolute;        /* fix: remove quotes */
+    left: 250px;
+    top: 30px;
+    width: 200px;
+    text-align: left;
+  }
+  
+  /* TITLE */
+  .recommend-title {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+  
+  /* THIN DIVIDER (like Figma line) */
+  .recommend-content::after {
+    content: "";
+    position: absolute;
+    left: -3px;                /* 185 vs 188 offset */
+    top: 79px;                 /* 95 (line) - 16 (content top) */
+    width: 220px;
+    height: 0;
+    border-top: 1.5px solid #000;
+  }
+  
+  /* DESCRIPTION */
+  .recommend-desc {
+    position: absolute;
+    left: 0;
+    top: 89px;                 /* 105 (desc) - 16 */
+    width: 141px;
+    margin: 0;
+    font-size: 16px;
+    color: #000;
+    line-height: 1.3;
+  }
+  
+  /* LIKES (heart + number) */
+  .recommend-likes {
+    position: absolute;
+    right: 85px;                /* 233 - 188 */
+    top: 225px;                /* 185 - 16 */
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 18px;
+    color: #6f6f6f;
+  }
+  .recommend-likes svg {       /* size MUI icon */
+    font-size: 20px;
+  }
+  .playButton {
+    position: absolute;
+    bottom: -250px;
+    right: 40px;
+    background-color: #1a1a1a;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+  }

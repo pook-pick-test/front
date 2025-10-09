@@ -1,0 +1,15 @@
+.read-more-btn  {
+    display: flex;
+    margin: 3% auto;
+    background-color: #ffffff;
+    color: black;
+    align-items: center;
+    border: 1px solid #000;
+    padding: 10px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    height: 34px;
+    max-height: 103px;
+    justify-content: center;
+}
