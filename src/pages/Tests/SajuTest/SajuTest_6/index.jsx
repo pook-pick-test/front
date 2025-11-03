@@ -33,7 +33,7 @@ const SajuProfile_Input = () => {
           <p>time of birth</p>
           <input type="time" value={birthTime} onChange={(e) => setBirthTime(e.target.value)}></input>
         </div>
-        <img src={DontKnowButton} alt="모름 버튼 이미지" className="dont-know-button" />
+        <img src={DontKnowButton} alt="모름 버튼 이미지" className="dont-know-button" onClick{() => setShowModal(true)} style={{cursor: 'pointer'}} />
       </div>
       <div className="profile-content-gender">
         <button className={selectedGender === 'male' ? selected : ''} onclick={() => setSelectedGender('male')}>male</button>
@@ -48,7 +48,42 @@ const SajuProfile_Input = () => {
       </div>
 
     </div>
-  
+
+    {showModal && (
+      <div className="modal-overlay" onClick={() => setShowModal(false)}>
+        <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+          <div className="modal-header">
+            <span className="modal-badge">Q & A</span>
+          </div>
+          <div className="modal-body">
+              <div className="modal-question">
+                <p>why did you ask about the gender?</p>
+              </div>
+              <div className="modal-answer">
+                <p>
+                  originally, Saju (사주, 四柱) does not consider gender. 
+                  gender affects the interpretation of the Four Pillars (year, month, day, time) in Korean and Chinese saju.
+                </p>
+                <p>
+                  Thus, the results can be different based on the gender you selected.
+                </p>
+              </div>
+              <div className="modal-note">
+                <p>
+                  We aware that gender is not limited to binary.
+                </p>
+                <p>
+                  However, in today's world where there is no related theory, we've included everyone who is interested in our saju service as 'rather not say' gender.
+                </p>
+              </div>
+            </div>
+            <button className="modal-close-button" onClick={() => setShowModal(false)}>
+              close
+            </button>
+          </div>
+        </div>
+      )}
+    </div>
   );
 }
 export default SajuProfile_Input;
