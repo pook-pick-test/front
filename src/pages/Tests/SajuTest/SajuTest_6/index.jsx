@@ -15,6 +15,7 @@ const SajuProfile_Input = () => {
 
   const [birthDate, setBirthDate] = useState('');
   const [birthTime, setBirthTime] = useState('');
+  const [selectedGender, setSelectedGender] = useState('');
 
   return (
     <div className="saju-profile">
@@ -35,10 +36,10 @@ const SajuProfile_Input = () => {
         <img src={DontKnowButton} alt="모름 버튼 이미지" className="dont-know-button" />
       </div>
       <div className="profile-content-gender">
-        <button>male</button>
-        <button>female</button>
-        <button>lgbtq+</button>
-        <button>rather not say</button>
+        <button className={selectedGender === 'male' ? selected : ''} onclick={() => setSelectedGender('male')}>male</button>
+        <button className={selectedGender === 'female' ? selected : ''} onclick={() => setSelectedGender('female')}>female</button>
+        <button className={selectedGender === 'lgbtq+' ? selected : ''} onclick={() => setSelectedGender('lgbtq+')}>lgbtq+</button>
+        <button className={selectedGender === '' ? selected : ''} onclick={() => setSelectedGender('')}>rather not say</button>
       </div>
       
       <div className="switch-page-button-container">
