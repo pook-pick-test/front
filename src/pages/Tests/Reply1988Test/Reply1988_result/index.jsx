@@ -2,7 +2,14 @@ import './index.css';
 import html2canvas from 'html2canvas';
 import musicPlayer from '../../../../assets/music-player.png';
 import ShareMethods from '../../../../components/ShareMethods';
+import { useOutletContext } from "react-router-dom";
+
 const Reply1988_Result = () => {
+
+    const { answers } = useOutletContext();
+
+    console.log("✅ final answers:", answers);
+
     {/* 라인 공유하기 */}
     // 이 방식은 webShareAPI 사용하려고 했던 방식
     // const shareWithLine = async() => {

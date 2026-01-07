@@ -16,10 +16,13 @@ const Reply1988TestLayout = () => {
   };
 
   // 질문 데이터 저장 함수
-  const saveQuestion = (order, questionData) => {
-    setQuestions((prev) => ({
+  const saveQuestion = (order, questionData, lang) => {
+    setQuestions(prev => ({
       ...prev,
-      [order]: questionData
+      [lang]: {
+        ...(prev[lang] || {}),
+        [order]: questionData,
+      },
     }));
   };
 

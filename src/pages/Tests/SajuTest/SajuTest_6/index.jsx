@@ -1,4 +1,3 @@
-// 정보 입력 폼 페이지
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import './index.css';
@@ -6,16 +5,15 @@ import SwitchPageButton from '../../../../components/SwitchPageButton';
 import DontKnowButton from '../../../../assets/dontKnowButton.png';
 
 const SajuProfile_Input = () => {
-
   const navigate = useNavigate();
+  const [birthDate, setBirthDate] = useState('');
+  const [birthTime, setBirthTime] = useState('');
+  const [selectedGender, setSelectedGender] = useState('');
+  const [showModal, setShowModal] = useState(false); // 모달 상태 추가
   
   const handleNext = () => {
     navigate('../7');
   }
-
-  const [birthDate, setBirthDate] = useState('');
-  const [birthTime, setBirthTime] = useState('');
-  const [selectedGender, setSelectedGender] = useState('');
 
   return (
     <div className="saju-profile">
@@ -33,13 +31,39 @@ const SajuProfile_Input = () => {
           <p>time of birth</p>
           <input type="time" value={birthTime} onChange={(e) => setBirthTime(e.target.value)}></input>
         </div>
-        <img src={DontKnowButton} alt="모름 버튼 이미지" className="dont-know-button" onClick{() => setShowModal(true)} style={{cursor: 'pointer'}} />
+        <img 
+          src={DontKnowButton} 
+          alt="모름 버튼 이미지" 
+          className="dont-know-button"
+          onClick={() => setShowModal(true)} // 클릭 시 모달 열기
+          style={{ cursor: 'pointer' }}
+        />
       </div>
       <div className="profile-content-gender">
-        <button className={selectedGender === 'male' ? selected : ''} onclick={() => setSelectedGender('male')}>male</button>
-        <button className={selectedGender === 'female' ? selected : ''} onclick={() => setSelectedGender('female')}>female</button>
-        <button className={selectedGender === 'lgbtq+' ? selected : ''} onclick={() => setSelectedGender('lgbtq+')}>lgbtq+</button>
-        <button className={selectedGender === '' ? selected : ''} onclick={() => setSelectedGender('')}>rather not say</button>
+        <button 
+          className={selectedGender === 'male' ? 'selected' : ''}
+          onClick={() => setSelectedGender('male')}
+        >
+          male
+        </button>
+        <button 
+          className={selectedGender === 'female' ? 'selected' : ''}
+          onClick={() => setSelectedGender('female')}
+        >
+          female
+        </button>
+        <button 
+          className={selectedGender === 'lgbtq+' ? 'selected' : ''}
+          onClick={() => setSelectedGender('lgbtq+')}
+        >
+          lgbtq+
+        </button>
+        <button 
+          className={selectedGender === 'other' ? 'selected' : ''}
+          onClick={() => setSelectedGender('other')}
+        >
+          rather not say
+        </button>
       </div>
       
       <div className="switch-page-button-container">
@@ -47,15 +71,14 @@ const SajuProfile_Input = () => {
         <SwitchPageButton onClick={handleNext} disabled={false}>next</SwitchPageButton>
       </div>
 
-    </div>
-
-    {showModal && (
-      <div className="modal-overlay" onClick={() => setShowModal(false)}>
-        <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-          <div className="modal-header">
-            <span className="modal-badge">Q & A</span>
-          </div>
-          <div className="modal-body">
+      {/* 모달 */}
+      {showModal && (
+        <div className="modal-overlay" onClick={() => setShowModal(false)}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <div className="modal-header">
+              <span className="modal-badge">Q & A</span>
+            </div>
+            <div className="modal-body">
               <div className="modal-question">
                 <p>why did you ask about the gender?</p>
               </div>
@@ -86,4 +109,5 @@ const SajuProfile_Input = () => {
     </div>
   );
 }
+
 export default SajuProfile_Input;

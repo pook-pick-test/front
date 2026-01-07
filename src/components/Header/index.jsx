@@ -1,15 +1,11 @@
 import React from 'react';
+import LanguageSelector from '../LanguageSelector';
 import './index.css';
 
 const Header = () => {
   return (
     <header className="header">
-      <select className="language-select">
-        <option>english</option>
-        <option>한국어</option>
-        <option>ภาษาไทย</option>
-      </select>
-
+      <LanguageSelector />
       <h1 className="site-title">test:D</h1>
 
       <a href="/" className="home-icon">
