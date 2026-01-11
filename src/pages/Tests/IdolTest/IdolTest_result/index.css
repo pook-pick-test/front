@@ -1,0 +1,86 @@
+.IdolTest-Result{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.result-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 85vw;
+    height: 85vh;
+    background: linear-gradient(180deg, #FFEFDF 0%, #FFFFF6 43.27%, #FFF 99.04%);
+    border: 1px solid #000;
+    border-radius: 20px;
+    margin: 5% 0;
+}
+.result-name{
+    color: #FFF;
+    text-align: center;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000;
+    font-family: Poppins;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 3.2px;
+}
+.result-desc{
+    font-size: 24px;
+    font-weight: 200;
+    text-align: center;
+    margin: 3vh 0 0 0;
+}
+.result-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 2vh 0;
+}
+.result-explain{
+    margin: 2vh 3vh;
+    text-align: center;
+}
+.result-music{
+    display: flex;
+    align-items: center;
+    gap: 5vw;
+    margin-top: 1vh;
+    padding: 1vh;
+    border-radius: 20px;
+    border: 1px solid #000;
+    background: #FFF5E9;
+}
+.music-desc{
+    margin-right: 6vh;
+    font-weight: 800;
+    font-style: bold;
+}
+.music-item {
+    border-radius: 20px;
+    border: 1px solid #000;
+    background: #FFF;
+    height: 115px;
+}
+.loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    font-size: 18px;
+}
+.error-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    gap: 2vh;
+}
+.error-message {
+    color: #ff4444;
+    font-size: 16px;
+    text-align: center;
+}
