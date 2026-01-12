@@ -13,6 +13,7 @@ export default defineConfig({
         ws: true,
         configure: (proxy, options) => {
           proxy.on('proxyReq', (proxyReq, req, res) => {
+            proxyReq.removeHeader('Origin'); // CORS 문제 방지
             console.log('🚀 Proxying:', req.method, req.url, '→', options.target + req.url);
           });
           proxy.on('proxyRes', (proxyRes, req, res) => {

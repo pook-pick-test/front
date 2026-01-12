@@ -6,23 +6,72 @@ import "./index.css";
 import { useNavigate } from "react-router-dom";
 import RecommendBox from "../../components/RecommendBox";
 import poster1988 from "../../assets/reply1988_poster.jpg";
+import { useLanguage } from "../../context/LanguageContext";
+import { useMemo } from "react";
 
 const Home = () => {
   const navigate = useNavigate();
+  const { lang } = useLanguage();
 
   const handleReadMoreClick = () => {
     navigate("/readmore");
   };
 
-  const recommended = [
-    {
-      image: poster1988,
-      title: "Which Reply 1988 character suits you the most?",
-      desc: "A retro vibe test that referenced by a famous Korean drama",
-      likes: 16,
-      path: "/tests/reply1988/Reply1988_1",
-    },
-  ];
+  // ✅ 간단한 i18n 딕셔너리 (필요한 만큼 확장)
+  const t = useMemo(() => {
+    const dict = {
+      en: {
+        aboutUsTitle: "about us",
+        aboutUsBody:
+          "We are a team of Korean and Thai college students. We started this project with the goal of helping people learn more about Korean culture in a friendly and engaging way. Our mission is to bridge cultures by offering a service that introduces the pop culture of both Korea and Thailand, making it more accessible and enjoyable for everyone.",
+        readMore: "read more",
+        categories: "categories",
+        viewAll: "view all",
+        recommended: "recommended",
+        recTitle: "Which Reply 1988 character suits you the most?",
+        recDesc: "A retro vibe test that referenced by a famous Korean drama",
+      },
+      ko: {
+        aboutUsTitle: "소개",
+        aboutUsBody:
+          "저희는 한국과 태국의 대학생들로 이루어진 팀입니다. 한국 문화를 더 친근하고 재미있게 알아갈 수 있도록 돕는 것을 목표로 이 프로젝트를 시작했습니다. 한국과 태국의 대중문화를 함께 소개하며, 누구나 쉽게 즐길 수 있도록 문화를 연결하는 서비스를 만들고 있어요.",
+        readMore: "더 보기",
+        categories: "카테고리",
+        viewAll: "전체 보기",
+        recommended: "추천",
+        recTitle: "나랑 가장 잘 맞는 응답하라 1988 캐릭터는?",
+        recDesc: "레트로 감성의 한국 드라마 기반 테스트",
+      },
+      th: {
+        aboutUsTitle: "เกี่ยวกับเรา",
+        aboutUsBody:
+          "พวกเราเป็นทีมของนักศึกษามหาวิทยาลัยจากเกาหลีและไทย เราเริ่มโปรเจกต์นี้เพื่อช่วยให้ทุกคนได้เรียนรู้วัฒนธรรมเกาหลีอย่างเป็นกันเองและสนุกสนาน ภารกิจของเราคือเชื่อมโยงวัฒนธรรมผ่านบริการที่แนะนำป๊อปคัลเจอร์ของทั้งเกาหลีและไทย ให้เข้าถึงง่ายและเพลิดเพลินสำหรับทุกคน",
+        readMore: "อ่านเพิ่มเติม",
+        categories: "หมวดหมู่",
+        viewAll: "ดูทั้งหมด",
+        recommended: "แนะนำ",
+        recTitle: "คุณเหมาะกับตัวละครไหนใน Reply 1988 มากที่สุด?",
+        recDesc: "แบบทดสอบฟีลเรโทร อ้างอิงจากซีรีส์เกาหลีชื่อดัง",
+      },
+    };
+
+    // fallback
+    return dict[lang] || dict.en;
+  }, [lang]);
+
+  // ✅ 추천 카드도 lang별로 텍스트만 바뀌게
+  const recommended = useMemo(
+    () => [
+      {
+        image: poster1988,
+        title: t.recTitle,
+        desc: t.recDesc,
+        likes: 16,
+        path: "/tests/reply1988/Reply1988_1",
+      },
+    ],
+    [t]
+  );
 
   return (
     <div className="home-container">
@@ -32,30 +81,25 @@ const Home = () => {
       <img src={logo} alt="Logo" className="logo" />
 
       <div className="about-us">
-        <h2>about us</h2>
-        <p>
-          We are a team of Korean and Thai college students. We started this
-          project with the goal of helping people learn more about Korean
-          culture in a friendly and engaging way. Our mission is to bridge
-          cultures by offering a service that introduces the pop culture of both
-          Korea and Thailand, making it more accessible and enjoyable for
-          everyone.
-        </p>
+        <h2>{t.aboutUsTitle}</h2>
+        <p>{t.aboutUsBody}</p>
         <button className="read-more-button" onClick={handleReadMoreClick}>
-          read more
+          {t.readMore}
         </button>
       </div>
 
       <div className="categories">
         <div className="category-header">
-          <h2>categories</h2>
-          <button className="view-all">view all {">"}</button>
+          <h2>{t.categories}</h2>
+          <button className="view-all">
+            {t.viewAll} {">"}
+          </button>
         </div>
         <CategoryButtons />
       </div>
 
       <div className="recommended">
-        <h2>recommended</h2>
+        <h2>{t.recommended}</h2>
         <div className="recommended-grid">
           {recommended.map((item, idx) => (
             <RecommendBox

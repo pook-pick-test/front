@@ -26,8 +26,6 @@ const Reply1988_Question = () => {
     setError(null);
     setLoading(true);
 
-    console.log("[Layout] lang changed:", lang);
-
     // ✅ 답변은 언어와 무관하므로 유지 (order별로만)
     setSelectedOption(answers?.[currentOrder] ?? null);
 
@@ -70,7 +68,7 @@ const Reply1988_Question = () => {
     fetchQuestion();
 
     return () => controller.abort();
-  }, [currentOrder, lang]); // ✅ 핵심: 이 두 개만
+  }, [currentOrder, lang]);
 
   const handleSelect = (optionId) => {
     setSelectedOption(optionId);

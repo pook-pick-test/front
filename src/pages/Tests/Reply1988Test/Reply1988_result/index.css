@@ -53,8 +53,15 @@
 }
 .music-item {
     border-radius: 20px;
+    flex-direction: column;   /* 🔑 세로로 쌓기 */
+    align-items: flex-start;  /* 왼쪽 정렬 */
     border: 1px solid #000;
     background: #FFF;
-    /* width: 127px; */
+    width: 127px;
     height: 115px;
+    gap: 10px;
+}
+.song {
+  white-space: normal;   /* 🔑 줄바꿈 허용 */
+  word-break: keep-all;  /* 한글 단어 깨짐 방지 */
 }
