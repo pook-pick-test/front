@@ -11,9 +11,17 @@
     cursor: pointer;
     font-size: 20px;
     font-weight: 400;
-
+    transition: background 0.2s ease;
 }
 
-.option-button:hover {
+/* 선택된 상태 */
+.option-button.selected {
     background: linear-gradient(0deg, #FEFDF2 0%, #FFF0E8 100%);
+    border: 1.5px solid #000;
+    font-weight: 400;
+}
+
+/* 호버는 선택되지 않은 버튼에만 적용 (선택사항) */
+.option-button:not(.selected):hover {
+    background: #f9f9f9;
 }
