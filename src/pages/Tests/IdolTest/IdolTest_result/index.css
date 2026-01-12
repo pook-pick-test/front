@@ -1,0 +1,229 @@
+.IdolTest-Result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background: #F5F5F5;
+    padding: 20px;
+}
+
+.result-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 400px;
+    background: linear-gradient(180deg, #FFEFDF 0%, #FFFFF6 43.27%, #FFF 99.04%);
+    border: 1px solid #000;
+    border-radius: 20px;
+    padding: 40px 25px 30px 25px;
+    margin-bottom: 20px;
+}
+
+/* 타이틀 - "Nalin's position in idol group is" */
+.result-title {
+    font-size: 22px;
+    font-weight: 500;
+    text-align: center;
+    margin: 0 0 25px 0;
+    line-height: 1.4;
+    color: #000;
+}
+
+/* 포지션 이름 - cursive 스타일 "A singer-songwriter" */
+.result-position {
+    font-family: 'Times New Roman', Georgia, serif;
+    font-style: italic;
+    font-size: 36px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 0 30px 0;
+    line-height: 1.2;
+    color: #000;
+}
+
+/* 설명 - "You perform well in every aspect....." */
+.result-intro {
+    font-size: 14px;
+    text-align: center;
+    margin: 0;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* (포지션 설명) */
+.result-intro-sub {
+    font-size: 12px;
+    text-align: center;
+    margin: 5px 0 30px 0;
+    color: #666;
+}
+
+/* resultDesc 배열 리스트 */
+.result-desc-list {
+    width: 100%;
+    margin: 15px 0 25px 0;
+    padding: 0 10px;
+}
+
+.result-desc-item {
+    font-size: 13px;
+    color: #444;
+    margin: 8px 0;
+    line-height: 1.5;
+    text-align: left;
+}
+
+/* 노래 섹션 */
+.song-section {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.song-title {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0 0 12px 0;
+    color: #000;
+}
+
+.song-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 12px;
+    background: #FFFFFF;
+    border-radius: 12px;
+    text-decoration: none;
+    color: inherit;
+    transition: background 0.2s ease;
+    border: 1px solid #eee;
+}
+
+.song-card:hover {
+    background: #f9f9f9;
+}
+
+.song-album {
+    width: 65px;
+    height: 65px;
+    border-radius: 8px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.song-album img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.album-placeholder {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.song-info {
+    flex: 1;
+}
+
+.song-name {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0 0 5px 0;
+    color: #000;
+    line-height: 1.4;
+}
+
+.song-artist {
+    font-size: 13px;
+    margin: 0;
+    color: #666;
+}
+
+/* 아이돌 섹션 */
+.idol-section {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.idol-section-title {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0 0 20px 0;
+    color: #000;
+}
+
+.idol-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.idol-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.idol-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: linear-gradient(180deg, #E8E8E8 0%, #D0D0D0 100%);
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.idol-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.idol-group {
+    font-size: 12px;
+    color: #666;
+    margin: 0;
+}
+
+.idol-name {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 3px 0 0 0;
+    color: #000;
+}
+
+/* 공유 타이틀 */
+.share-title {
+    font-size: 14px;
+    color: #666;
+    margin: 15px 0 0 0;
+}
+
+/* 로딩 & 에러 */
+.loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    font-size: 18px;
+}
+
+.error-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    gap: 2vh;
+}
+
+.error-message {
+    color: #ff4444;
+    font-size: 16px;
+    text-align: center;
+    padding: 0 20px;
+}
