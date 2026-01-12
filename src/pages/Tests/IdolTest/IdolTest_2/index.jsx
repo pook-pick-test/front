@@ -47,7 +47,7 @@ const IdolTest_2 = () => {
                 placeholder={placeholderByLang[lang] ?? "Write your name here"}
             />
             <div className="switch-page-button-container">
-                <SwitchPageButton className="previous-button" onClick={handlePrevious}>previous</SwitchPageButton>
+                <SwitchPageButton className="previous-button" onClick={handlePrevious}>Previous</SwitchPageButton>
                 <SwitchPageButton className="test-start-button" onClick={handleButton} disabled={!memo}>Start Test</SwitchPageButton>
             </div>
         </div>
