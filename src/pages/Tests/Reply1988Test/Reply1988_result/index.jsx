@@ -149,7 +149,7 @@ const Reply1988_Result = () => {
 
   const clean = (s = "") => s.replace(/\s*\([^)]*\)/g, "").trim();
 
-  const characterImgUrl = ""; // 필요시 연결
+  const characterImgUrl = result?.resultCelebrities?.[0]?.imageUrl;
 
   return (
     <div className="Reply1988-Result">
