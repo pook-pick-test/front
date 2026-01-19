@@ -16,4 +16,6 @@
 .test-description{
     padding: 0px 70px 60px 70px;
     text-align: center;
+    font-weight: 400;
+    font-size: clamp(16px, 4vw, 20px);
 }

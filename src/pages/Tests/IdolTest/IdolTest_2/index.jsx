@@ -30,7 +30,7 @@ const IdolTest_2 = () => {
     }
 
     const placeholderByLang = {
-        ko: "여기에 이름을 입력하세요",
+        ko: "이름을 입력하세요",
         en: "Write your name here",
         th: "ชื่อ"
     }

@@ -18,7 +18,9 @@ p {
 }
 .about-us {
   padding: 0 5%;
-  font-size: clamp(18px, 2vw, 2px);
+  font-size: clamp(18px, 2vw, 25px);
+  font-weight: 400;
+  line-height: 1.6;
 }
 .read-more-button {
   display: flex;
@@ -26,7 +28,7 @@ p {
   background-color: #ffffff;
   color: black;
   align-items: center;
-  border: 1px solid #000;
+  border: 1.5px solid #000;
   padding: 10px 20px;
   border-radius: 15px;
   cursor: pointer;

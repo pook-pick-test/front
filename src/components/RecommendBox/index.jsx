@@ -24,7 +24,7 @@ export default function RecommendBox({ image, title, desc, likes, path }) {
             {likes}
           </span>
           <SwitchPageButton className="playButton" onClick={handleStart}>
-            play
+            Play
           </SwitchPageButton>
         </div>
       </div>
