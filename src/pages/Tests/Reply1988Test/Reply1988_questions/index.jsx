@@ -132,8 +132,8 @@ const Reply1988_Question = () => {
     <div className="reply1988-explain-4">
       <ProgressBar currentStep={currentOrder} totalSteps={totalQuestions} className="progress-bar" />
 
-      <div className="question1-wrapper">
-        <h3 className="question1">
+      <div className="reply-question1-wrapper">
+        <h3 className="reply-question1">
           Q{questionData.order}. {questionData.question}
         </h3>
 

@@ -21,6 +21,7 @@ import SajuTest_TestStart from './pages/Tests/SajuTest/SajuTest_5';
 import SajuProfile_Input from './pages/Tests/SajuTest/SajuTest_6';
 import { LanguageProvider } from './context/LanguageContext';
 import Reply1988_Question from './pages/Tests/Reply1988Test/Reply1988_questions';
+import TestListPage from './pages/SearchResult';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/readmore" element={<ReadMore />} />
+            <Route path="/tests/search" element={<TestListPage />} />
             
             {/* Idol Test 중첩 라우트 */}
             <Route path="category/music" element={<IdolTestLayout />}>

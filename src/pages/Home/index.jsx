@@ -17,7 +17,6 @@ const Home = () => {
     navigate("/readmore");
   };
 
-  // ✅ 간단한 i18n 딕셔너리 (필요한 만큼 확장)
   const t = useMemo(() => {
     const dict = {
       en: {
@@ -59,7 +58,6 @@ const Home = () => {
     return dict[lang] || dict.en;
   }, [lang]);
 
-  // ✅ 추천 카드도 lang별로 텍스트만 바뀌게
   const recommended = useMemo(
     () => [
       {
@@ -67,7 +65,7 @@ const Home = () => {
         title: t.recTitle,
         desc: t.recDesc,
         likes: 16,
-        path: "/tests/reply1988/Reply1988_1",
+        path: "/category/drama",
       },
     ],
     [t]
