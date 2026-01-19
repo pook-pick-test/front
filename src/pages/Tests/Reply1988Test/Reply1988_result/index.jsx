@@ -177,7 +177,6 @@ const Reply1988_Result = () => {
               style={{
                 objectFit: "cover",
                 borderRadius: "18px",
-                marginLeft: "25px",
                 marginTop: "10px",
                 cursor: youtubeUrl ? "pointer" : "default",
               }}

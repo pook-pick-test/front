@@ -52,13 +52,14 @@
     font-style: bold;
 }
 .music-item {
+    display: flex;
     border-radius: 20px;
     flex-direction: column;   /* 🔑 세로로 쌓기 */
-    align-items: flex-start;  /* 왼쪽 정렬 */
+    align-items: center;  /* 왼쪽 정렬 */
     border: 1px solid #000;
     background: #FFF;
-    width: 127px;
-    height: 115px;
+    width: 170px;
+    height: 140px;
     gap: 10px;
 }
 .song {
