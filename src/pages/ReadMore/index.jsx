@@ -1,8 +1,10 @@
 import Header from "../../components/Header";
-import logo from "../../assets/logo.svg";
+import logo from "../../assets/logo.png";
 import "./index.css";
 import { useLanguage } from "../../context/LanguageContext";
 import { useMemo } from "react";
+import mimoticon1 from "../../assets/mimoticon-seoyeon1.png";
+import mimoticon2 from "../../assets/mimoticon-minseo.png";
 
 const ReadMore = () => {
   const { lang } = useLanguage();
@@ -65,7 +67,8 @@ const ReadMore = () => {
         </div>
 
         <div className="member">
-          <strong>21학번 김서연 (Kim Seoyeon)</strong>
+          <img src={mimoticon1} alt="mimoticon-seoyeon" className="mimoticon-image" />
+          <br /><strong>21학번 김서연 (Kim Seoyeon)</strong>
           <br />
           <ul className="member-description">
             <li>Sungkyunkwan University, Child Psychology and Education</li>
@@ -88,7 +91,8 @@ const ReadMore = () => {
         </div>
 
         <div className="member">
-          <strong>22학번 박민서 (Park Minseo)</strong>
+          <img src={mimoticon2} alt="mimoticon-minseo" className="mimoticon-image" />
+          <br /><strong>22학번 박민서 (Park Minseo)</strong>
           <br />
           <ul className="member-description">
             <li>Ewha Womans University, Computer Science and Engineering</li>

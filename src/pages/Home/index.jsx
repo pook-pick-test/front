@@ -1,7 +1,7 @@
 import SearchBox from "../../components/SearchBox";
 import CategoryButtons from "../../components/CategoryButtons";
 import Header from "../../components/Header";
-import logo from "../../assets/logo.svg";
+import logo from "../../assets/logo.png";
 import "./index.css";
 import { useNavigate } from "react-router-dom";
 import RecommendBox from "../../components/RecommendBox";

@@ -10,3 +10,11 @@
 .member-description {
     margin: 0;
 }
+
+.mimoticon-image {
+    width: 200px;
+    height: auto;
+    margin-bottom: 5px;
+    border-radius: 15px;
+    border: 1.5px solid #CECECE;
+}
