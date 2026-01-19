@@ -20,19 +20,19 @@ const IdolTest_2 = () => {
     const titleByLang = {
         ko: "당신의 이름은?",
         en: "What is your name?",
-        th: "ชื่อของคุณคืออะไร?"
+        th: "คุณชื่ออะไร?"
     }
 
     const descByLang = {
         ko: "본명 또는 활동명이 될 수 있어요 ... !",
         en: "It could be your real name or your stage name ... !",
-        th: "อาจเป็นชื่อจริงหรือชื่อบนเวทีของคุณ ... !"
+        th: "จะเป็นชื่อจริงหรือสเตจเนมของคุณก็ได้ ... !"
     }
 
     const placeholderByLang = {
         ko: "여기에 이름을 입력하세요",
         en: "Write your name here",
-        th: "เขียนชื่อของคุณที่นี่"
+        th: "ชื่อ"
     }
 
     return (
