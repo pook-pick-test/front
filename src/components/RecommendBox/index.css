@@ -8,8 +8,8 @@
   
     display: block;
     padding: 0;
-    max-width: none;
-    max-height: none;
+    max-width: 450px;
+    max-height: 600px;
     flex-direction: column;
   }
 
@@ -17,7 +17,7 @@
     position: absolute;
     left: 25px;
     top: 40px;
-    width: 100px;
+    width: 150px;
     height: 200px;
     object-fit: cover;
     border-radius: 15px;
@@ -28,7 +28,7 @@
   /* CONTENT AREA ON THE RIGHT */
   .recommend-content {
     position: absolute;        /* fix: remove quotes */
-    left: 150px;
+    left: 200px;
     top: 30px;
     width: 190px;
     text-align: left;
@@ -68,8 +68,8 @@
   /* LIKES (heart + number) */
   .recommend-likes {
     position: absolute;
-    right: 85px;                /* 233 - 188 */
-    top: 140px;                /* 185 - 16 */
+    right: 4px;                /* 233 - 188 */
+    top: 180px;                /* 185 - 16 */
     display: inline-flex;
     align-items: center;
     gap: 5px;
@@ -81,7 +81,7 @@
   }
   .playButton {
     position: absolute;
-    bottom: -200px;
+    bottom: -207px;
     right: 40px;
     background-color: #1a1a1a;
     color: #fff;

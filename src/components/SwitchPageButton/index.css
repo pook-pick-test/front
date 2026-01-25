@@ -15,6 +15,7 @@
     justify-content: center;   /* 가로 중앙 정렬 */
     align-items: center;       /* 세로 중앙 정렬 */
     cursor: pointer;
+    font-family: 'Prompt', sans-serif;
 }
 .switch-page-button:hover {
     background: #FFFFFF;

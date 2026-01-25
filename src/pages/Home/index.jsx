@@ -20,13 +20,13 @@ const Home = () => {
   const t = useMemo(() => {
     const dict = {
       en: {
-        aboutUsTitle: "about us",
+        aboutUsTitle: "About us",
         aboutUsBody:
           "We are a team of Korean and Thai college students. We started this project with the goal of helping people learn more about Korean culture in a friendly and engaging way. Our mission is to bridge cultures by offering a service that introduces the pop culture of both Korea and Thailand, making it more accessible and enjoyable for everyone.",
-        readMore: "read more",
-        categories: "categories",
+        readMore: "Read More",
+        categories: "Categories",
         viewAll: "view all",
-        recommended: "recommended",
+        recommended: "Recommended",
         recTitle: "Which Reply 1988 character suits you the most?",
         recDesc: "A retro vibe test that referenced by a famous Korean drama",
       },

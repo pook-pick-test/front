@@ -108,7 +108,7 @@ const IdolTest_Question = () => {
       <div className="idol-test-question">
         <div className="error-container">
           <p className="error-message">{error}</p>
-          <SwitchPageButton onClick={handlePrevious}>previous</SwitchPageButton>
+          <SwitchPageButton onClick={handlePrevious}>Previous</SwitchPageButton>
         </div>
       </div>
     );
@@ -165,7 +165,7 @@ const IdolTest_Question = () => {
 
       <div className='switch-page-container'>
         <SwitchPageButton onClick={handlePrevious} className="previous-button">
-          previous
+          Previous
         </SwitchPageButton>
 
         <SwitchPageButton

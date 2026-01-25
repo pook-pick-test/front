@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
-    background: #F5F5F5;
+    background: #ffffff;
     padding: 20px;
 }
 
@@ -12,41 +12,38 @@
     flex-direction: column;
     align-items: center;
     width: 90%;
-    max-width: 400px;
+    max-width: 450px;
     background: linear-gradient(180deg, #FFEFDF 0%, #FFFFF6 43.27%, #FFF 99.04%);
     border: 1px solid #000;
-    border-radius: 20px;
+    border-radius: 40px;
     padding: 40px 25px 30px 25px;
     margin-bottom: 20px;
 }
 
 /* 타이틀 - "'s position in idol group is" */
 .result-title {
-    font-size: 22px;
+    font-size: 25px;
     font-weight: 500;
     text-align: center;
     margin: 0 0 25px 0;
-    line-height: 1.4;
+    line-height: 1;
     color: #000;
 }
 
 /* 포지션 이름 - cursive 스타일 "A singer-songwriter" */
 .result-position {
     color: #fff;                  /* white fill */
-    font-family: Poppins;
-    font-size: 32px;
-
-    font-weight: 900;             /* thicker white part */
-    letter-spacing: 3px;
+    font-size: 40px;
+    font-weight: 1000;             /* thicker white part */
+    letter-spacing: 1px;
     text-align: center;
-
-    -webkit-text-stroke: 0.6px #000;  /* thinner black outline */
+    -webkit-text-stroke: 1.5px #000;  /* thinner black outline */
 }
 
 
 /* 설명 - "You perform well in every aspect....." */
 .result-intro {
-    font-size: 14px;
+    font-size: 18px;
     text-align: center;
     margin: 0;
     color: #333;
@@ -69,7 +66,7 @@
 }
 
 .result-desc-item {
-    font-size: 13px;
+    font-size: 16px;
     color: #444;
     margin: 8px 0;
     line-height: 1.5;
@@ -83,7 +80,7 @@
 }
 
 .song-title {
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 600;
     margin: 0 0 12px 0;
     color: #000;
@@ -94,12 +91,12 @@
     align-items: center;
     gap: 15px;
     padding: 12px;
-    background: #FFFFFF;
-    border-radius: 12px;
+    border-radius: 40px;
     text-decoration: none;
     color: inherit;
     transition: background 0.2s ease;
-    border: 1px solid #eee;
+    background-color: white;
+    border: 1.5px solid #000000;
 }
 
 .song-card:hover {
@@ -131,7 +128,7 @@
 }
 
 .song-name {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
     margin: 0 0 5px 0;
     color: #000;
@@ -139,7 +136,7 @@
 }
 
 .song-artist {
-    font-size: 13px;
+    font-size: 14px;
     margin: 0;
     color: #666;
 }
@@ -151,7 +148,7 @@
 }
 
 .idol-section-title {
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 600;
     margin: 0 0 20px 0;
     color: #000;
@@ -175,7 +172,7 @@
     height: 80px;
     border-radius: 50%;
     background: linear-gradient(180deg, #E8E8E8 0%, #D0D0D0 100%);
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     overflow: hidden;
 }
 
@@ -192,7 +189,7 @@
 }
 
 .idol-name {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
     margin: 3px 0 0 0;
     color: #000;
