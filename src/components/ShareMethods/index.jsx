@@ -40,9 +40,9 @@ const ShareMethods = () => {
     <div className="sharing-methods">
       <p className="share-desc">share with your friends</p>
       <div className="sharing-buttons">
-        <img src={shareXimage} alt="shareWith-X" onClick={shareWithX} />
+        <img src={shareXimage} alt="shareWith-X" onClick={shareWithX} className='download-btn'/>
         <a href="https://line.me/R/msg/text/?내%20결과도%20알아보기%20👉%20https://example.com" target="_blank">
-                    <img src={lineImage} alt="LINE으로 공유하기" />
+                    <img src={lineImage} alt="LINE으로 공유하기" className='download-btn'/>
         </a>
         <img src={downloadImage} alt='이미지로 저장' onClick={handleDownloadImage} className='download-btn' />
       </div>
