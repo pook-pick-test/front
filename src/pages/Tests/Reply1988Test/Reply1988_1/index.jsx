@@ -32,7 +32,7 @@ const Reply1988_Start = () => {
             <h2 className="test-name">{titleByLang[lang]}</h2>
             <img src={microphoneImg} alt="microphone-image" className="microphone-img"/>
             <p className="test-description">{descByLang[lang] ?? "No description available."}</p>
-            <SwitchPageButton className="desc-start-button" onClick={handleNext} disabled={false}>next</SwitchPageButton>
+            <SwitchPageButton className="desc-start-button" onClick={handleNext} disabled={false}>Next</SwitchPageButton>
         </div>
     );
 }

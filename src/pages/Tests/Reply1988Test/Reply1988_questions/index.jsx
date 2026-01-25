@@ -109,7 +109,7 @@ const Reply1988_Question = () => {
       <div className="reply1988-explain-4">
         <div className="error-container">
           <p className="error-message">{error}</p>
-          <SwitchPageButton onClick={handlePrevious}>previous</SwitchPageButton>
+          <SwitchPageButton onClick={handlePrevious}>Previous</SwitchPageButton>
         </div>
       </div>
     );
@@ -120,7 +120,7 @@ const Reply1988_Question = () => {
       <div className="reply1988-explain-4">
         <div className="error-container">
           <p className="error-message">질문 데이터가 없습니다.</p>
-          <SwitchPageButton onClick={handlePrevious}>previous</SwitchPageButton>
+          <SwitchPageButton onClick={handlePrevious}>Previous</SwitchPageButton>
         </div>
       </div>
     );
@@ -166,7 +166,7 @@ const Reply1988_Question = () => {
 
       <div className='switch-page-container'>
         <SwitchPageButton onClick={handlePrevious} className="previous-button">
-          previous
+          Previous
         </SwitchPageButton>
 
         <SwitchPageButton

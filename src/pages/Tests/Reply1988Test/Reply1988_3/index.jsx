@@ -38,7 +38,7 @@ const Reply1988_3 = () => {
                 </a>
             </p>
             <div className="switch-page-button-container">
-                <SwitchPageButton onClick={() => navigate('/category/drama/reply1988-test/2')} disabled={false} className="previous-button">previous</SwitchPageButton>
+                <SwitchPageButton onClick={() => navigate('/category/drama/reply1988-test/2')} disabled={false} className="previous-button">Previous</SwitchPageButton>
                 <SwitchPageButton onClick={handleNext} disabled={false}>Test Start</SwitchPageButton>
             </div>
         </div>

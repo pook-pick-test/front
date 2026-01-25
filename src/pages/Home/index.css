@@ -36,6 +36,7 @@ p {
   height: 34px;
   max-height: 103px;
   justify-content: center;
+  font-family: 'Prompt', sans-serif;
 }
 .category-header {
   display: flex;

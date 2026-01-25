@@ -33,8 +33,8 @@ const Reply1988_2 = () => {
             <img src={microphoneImg} alt="microphone-image" className="microphone-img"/>
             <p className="test-description">{descByLang[lang] ?? "No description available."}</p>
             <div className="switch-page-button-container">
-                <SwitchPageButton onClick={() => navigate('/category/drama/reply1988-test')} disabled={false} className="previous-button">previous</SwitchPageButton>
-                <SwitchPageButton onClick={handleNext} disabled={false}>next</SwitchPageButton>
+                <SwitchPageButton onClick={() => navigate('/category/drama/reply1988-test')} disabled={false} className="previous-button">Previous</SwitchPageButton>
+                <SwitchPageButton onClick={handleNext} disabled={false}>Next</SwitchPageButton>
             </div>
         </div>
     );
