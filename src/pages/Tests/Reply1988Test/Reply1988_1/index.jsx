@@ -23,7 +23,7 @@ const Reply1988_Start = () => {
     const descByLang = {
         ko : "응답하라 1988은 2015-2016년에 방영되었습니다. 1988년을 배경으로 서울 쌍문동의 같은 동네에 사는 다섯 가족의 삶을 따라갑니다. 이야기는 십대 친구들인 덕선, 정환, 선우, 동룡, 택을 중심으로 그들의 성장 경험, 가족 역학, 우정, 첫사랑을 포착합니다.",
         en : "Reply 1988 is aired in 2015–2016. Set in the year 1988, it follows the lives of five families living in the same neighborhood in Ssangmun-dong, Seoul. The story centers around a group of teenage friends—Deok-sun, Jung-hwan, Sun-woo, Dong-ryong, and Taek—and captures their coming-of-age experiences, family dynamics, friendships, and first loves.",
-        th : "Reply 1988 ออกอากาศในปี 2015-2016 ตั้งอยู่ในปี 1988 ติดตามชีวิตของครอบครัวห้าครอบครัวที่อาศัยอยู่ในละแวกเดียวกันในซังมุนดง โซล เรื่องราวเน้นไปที่กลุ่มเพื่อนวัยรุ่น—ด็อกซุน จองฮวาน ซันอู ดงรยอง และแท็ก—และจับภาพประสบการณ์การเติบโตของพวกเขา พลวัตของครอบครัว มิตรภาพ และความรักครั้งแรก"
+        th : "Reply 1988 ออกอากาศในปี 2015-2016 ติดตามชีวิตของครอบครัวห้าครอบครัวที่อาศัยอยู่ในละแวกเดียวกันในซังมุนดง ดำเนินเรื่องโดยตัวละครกลุ่มเพื่อนวัยรุ่น ได้แก่ ด็อกซุน จองฮวาน ซันอู ดงรยอง และแท็ก อบอุ่นหัวใจไปกับการได้เห็นเติบโตของพวกเขา ความสัมพันธ์ของครอบครัว มิตรภาพ และความรัก"
     }
 
     return(
