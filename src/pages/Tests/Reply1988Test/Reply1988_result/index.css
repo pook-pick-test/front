@@ -8,7 +8,7 @@
     flex-direction: column;
     align-items: center;
     width: 85vw;
-    height: 85vh; /* 화면 높이 딱 맞춤 */
+    /* height: 85vh; 화면 높이 딱 맞춤 */
     background: linear-gradient(180deg, #FFEFDF 0%, #FFFFF6 43.27%, #FFF 99.04%);
     border: 1.5px solid #000;
     border-radius: 20px;
